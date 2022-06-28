@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="infinite">
+            <p>Hello World!</p>
+        </div>
+        <script>
+        var element,text,tag;
+        for(var i=0;i<100;i++){
+            tag = document.createElement("p");
+            text = document.createTextNode("Hello World");
+            tag.appendChild(text);
+            element = document.getElementById("infinite");
+            element.appendChild(tag);
+        }
+        </script>
+    </body>
+
+
+</html>
